@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MySocial - Profile</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+
+        <div class="logo">
+            MySocial
+        </div>
+
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="profile.html">Profile</a>
+            <a href="recharge.html">Balance</a>
+            <a href="index.html">Logout</a>
+        </div>
+
+    </nav>
+
+
+    <!-- Profile -->
+    <main class="profile-container">
+
+        <div class="profile-card">
+
+            <!-- Profile Photo -->
+            <div class="profile-photo">
+                👤
+            </div>
+
+            <!-- Username -->
+            <h1 id="profileName">
+                Your Name
+            </h1>
+
+            <p id="profileUsername">
+                @username
+            </p>
+
+
+            <!-- Bio -->
+            <div class="profile-section">
+
+                <h2>About Me</h2>
+
+                <p id="profileBio">
+                    Welcome to my profile!
+                    This is my personal bio.
+                </p>
+
+            </div>
+
+
+            <!-- Balance -->
+            <div class="balance-card">
+
+                <h2>My Balance</h2>
+
+                <div class="balance">
+                    Rs. <span id="profileBalance">0</span>
+                </div>
+
+                <a href="recharge.html">
+                    <button>
+                        Recharge Balance
+                    </button>
+                </a>
+
+            </div>
+
+
+            <!-- Profile Information -->
+            <div class="profile-info">
+
+                <div>
+                    <strong>Username</strong>
+                    <p id="infoUsername">username</p>
+                </div>
+
+                <div>
+                    <strong>Email</strong>
+                    <p id="profileEmail">example@email.com</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

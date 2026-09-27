@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MySocial - Recharge</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+
+        <div class="logo">
+            MySocial
+        </div>
+
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="profile.html">Profile</a>
+            <a href="recharge.html">Balance</a>
+            <a href="index.html">Logout</a>
+        </div>
+
+    </nav>
+
+
+    <!-- Recharge Page -->
+    <main class="recharge-container">
+
+        <div class="recharge-card">
+
+            <h1>Recharge Balance</h1>
+
+            <p>Current Balance</p>
+
+            <div class="current-balance">
+                Rs. <span id="currentBalance">0</span>
+            </div>
+
+
+            <form id="rechargeForm">
+
+                <label for="amount">
+                    Enter Recharge Amount
+                </label>
+
+                <input
+                    type="number"
+                    id="amount"
+                    placeholder="Enter amount"
+                    min="1"
+                    required
+                >
+
+
+                <!-- Quick Amount Buttons -->
+                <div class="quick-amounts">
+
+                    <button type="button" onclick="selectAmount(100)">
+                        Rs. 100
+                    </button>
+
+                    <button type="button" onclick="selectAmount(500)">
+                        Rs. 500
+                    </button>
+
+                    <button type="button" onclick="selectAmount(1000)">
+                        Rs. 1000
+                    </button>
+
+                    <button type="button" onclick="selectAmount(2000)">
+                        Rs. 2000
+                    </button>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="recharge-button"
+                >
+                    Recharge Now
+                </button>
+
+            </form>
+
+
+            <p id="rechargeMessage"></p>
+
+            <a href="profile.html">
+                <button class="back-button">
+                    Back to Profile
+                </button>
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

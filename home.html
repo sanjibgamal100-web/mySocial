@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MySocial - Home</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+
+        <div class="logo">
+            MySocial
+        </div>
+
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="profile.html">Profile</a>
+            <a href="recharge.html">Balance</a>
+            <a href="index.html">Logout</a>
+        </div>
+
+    </nav>
+
+
+    <!-- Main Content -->
+    <main class="home-container">
+
+        <section class="welcome-card">
+
+            <h1>Welcome to MySocial 👋</h1>
+
+            <p>
+                Connect with friends, create your profile,
+                and share your thoughts.
+            </p>
+
+        </section>
+
+
+        <!-- Create Post -->
+        <section class="post-box">
+
+            <h2>Create a Post</h2>
+
+            <textarea
+                id="postText"
+                placeholder="What's on your mind?"
+            ></textarea>
+
+            <button onclick="createPost()">
+                Post
+            </button>
+
+        </section>
+
+
+        <!-- Posts -->
+        <section id="posts">
+
+            <div class="post">
+
+                <h3>Welcome to MySocial!</h3>
+
+                <p>
+                    This is your first post.
+                    Start connecting with people.
+                </p>
+
+                <small>
+                    Just now
+                </small>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
